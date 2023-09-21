@@ -1,0 +1,31 @@
+<div vs-component="VsModel" vs-src="examples/vs-model.js">
+    <input vs-model="simple" type="text" class="form-control" />
+    <span vs-model="simple"></span>
+    <br>
+    <br>
+    <input vs-model="items[1]" type="text" class="form-control" />
+    <span vs-model="items[1]"></span>
+    <br>
+    <br>
+    <input vs-model="model.one" type="text" class="form-control" />
+    <span vs-model="model.one"></span>
+    <br>
+    <br>
+    <input vs-model="model.two.one" type="text" class="form-control" />
+    <span vs-model="model.two.one"></span>
+    <br>
+    <br>
+    <input vs-model="model.items[0]" type="text" class="form-control" />
+    <span vs-model="model.items[0]"></span>
+    <br>
+    <br>
+    <input vs-model="model.complex[1].one" type="text" class="form-control" />
+    <span vs-model="model.complex[1].one"></span>
+    <br>
+    <br>
+    <input vs-model="comps[1].text" type="text" class="form-control" />
+    <span vs-model="comps[1].text"></span>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary btn-block" vs-event-click="onReset()">Reset</button>
+</div>

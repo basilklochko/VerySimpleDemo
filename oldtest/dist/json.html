@@ -1,0 +1,13 @@
+<h4>This is json html loaded externally</h4>
+<div vs-component="Json">
+    <button vs-event-click="onLoad()">Get JSON</button>
+    <button vs-event-click="onClear()">Clear</button>
+
+    <div vs-for="item in data">
+        <div>
+            <span type="text" vs-model="item.id"></span>
+            <span type="text" vs-model="item.first_name"></span>
+            <span type="text" vs-model="item.last_name"></span>
+        </div>
+    </div>
+</div>

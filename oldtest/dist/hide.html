@@ -1,0 +1,17 @@
+<div vs-component="Hide">
+    <div>
+        <input vs-model="$SharedService.text" type="text" />
+        <br>
+        <span vs-model="$SharedService.text"></span>
+        <br>
+        <div vs-hide="isHidden">
+            VISIBLE this is isHidden =
+            <span vs-model="isHidden"></span>
+        </div>
+        <div vs-hide="!isHidden">
+            INVISIBLE this is isHidden =
+            <span vs-model="isHidden"></span>
+        </div>
+    </div>
+    <button vs-event-click="onClick()">Show/Hide</button>
+</div>

@@ -1,0 +1,52 @@
+<div class="row" vs-component="Demo" vs-src="demo.js">
+    <div class="col-2">
+        <h6>Example</h6>
+        <hr>
+        <div vs-for="example in examples">
+            <input type="button" class="btn btn-primary btn-block" vs-model="example.title" vs-event-click="onExample(example.name)"
+                vs-disabled="example.active">
+            <br>
+        </div>
+    </div>
+    <div class="col-6">
+        <h6>Code</h6>
+        <hr>
+        <div>
+            <h6 class="text-danger">&lt; HTML /> </h6>
+            <div vs-target="html" class="code">
+                Select example
+            </div>
+            <hr>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" vs-class="jsSelected" vs-event-click="onJs()">
+                        JavaScript
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" vs-class="tsSelected" vs-event-click="onTs()">
+                        TypeScript
+                    </a>
+                </li>
+            </ul>
+
+            <br>
+            <div vs-target="js" class="code" vs-hide="isTs">
+                Select example
+            </div>
+            <div vs-target="ts" class="code" vs-hide="!isTs">
+                Select example
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-4">
+        <h6>Result</h6>
+        <hr>
+        <div vs-target="result">
+            Select example
+        </div>
+    </div>
+</div>

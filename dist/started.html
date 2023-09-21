@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-12">
+        <h5>
+            VerySimple.js is a light and simplistic JavaScript framework inspired by Angular and based on usage of html attributes.
+        </h5>
+        <p>
+            VerySimple.js uses concept of component - an individual module represented by template (html file) and corresponding typescript/javascript
+            class. Component could be nested and can interact with other components.
+            <br> VerySimple.js IS NOT an SPA framework, thought could be used for building pseudo SPA applications without preserving
+            browser's history.
+        </p>
+        <h6>
+            1. Include vs.js or vs.min.js into your page
+        </h6>
+        <div class="small">
+            <b>&lt;!DOCTYPE html&gt;
+                <br> &lt;html&gt;
+                <br> &lt;head&gt;
+                <br> &lt;script src=&quot;http://verysimplejs.gearhostpreview.com/vs.min.js&quot;&gt;&lt;/script&gt;
+                <br>&lt;/head&gt;
+                <br> &lt;body&gt;
+                <br> &lt;/body&gt;
+                <br> &lt;/html&gt;</b>
+        </div>
+        <br>
+        <h6>
+            2. Define html template for the component
+        </h6>
+        <div class="small">
+            &lt;!DOCTYPE html&gt;
+            <br> &lt;html&gt;
+            <br> &lt;head&gt;
+            <br> &lt;script src=&quot;http://verysimplejs.gearhostpreview.com/vs.min.js&quot;&gt;&lt;/script&gt;
+            <br>&lt;/head&gt;
+            <br> &lt;body&gt;
+            <br>
+            <b>&lt;div vs-component=&quot;World&quot; vs-src=&quot;world.js&quot;&gt;
+                <br>&lt;span vs-model=&quot;greeting&quot;&gt;&lt;/span&gt;
+                <br> &lt;input type=&quot;button&quot; vs-event-click=&quot;onGreeting()&quot; value=&quot;Greet&quot; /&gt;</b>
+            <br> &lt;/div&gt;
+            <br> &lt;/body&gt;
+            <br> &lt;/html&gt;
+        </div>
+        <br>
+        <h6>
+            3. Define the javascript code for the component and save it as the source for the template (world.js in this case)
+        </h6>
+        <div class="small">
+            <b>
+                class World {
+                <br>constructor() {
+                <br>this.greeting = "";
+                <br>}
+                <br>onGreeting(){
+                <br>this.greeting = "Hello, World";
+                <br>}
+                <br>}
+            </b>
+        </div>
+    </div>
+</div>

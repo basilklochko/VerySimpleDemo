@@ -1,0 +1,10 @@
+<div vs-component="VsFor" vs-src="examples/vs-for.js">
+    <ul vs-for="item in comps">
+        <li>
+            <input vs-model="item.text" type="text" class="form-control" />
+            <span vs-model="item.text"></span>
+        </li>
+    </ul>
+    <input type="text" vs-model="comps[0].text" class="form-control">
+    <span vs-model="comps[0].text"></span>
+</div>

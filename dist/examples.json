@@ -1,0 +1,42 @@
+[
+    {
+        "name": "vs-model",
+        "title": "Model Binding",
+        "active": false
+    },
+    {
+        "name": "vs-event",
+        "title": "Event Binding",
+        "active": false
+    },
+    {
+        "name": "vs-for",
+        "title": "Repeater",
+        "active": false
+    },
+    {
+        "name": "vs-hide",
+        "title": "Hide/Show",
+        "active": false
+    },
+    {
+        "name": "vs-disabled",
+        "title": "Disable/Enable",
+        "active": false
+    },
+    {
+        "name": "vs-class",
+        "title": "CSS Class",
+        "active": false
+    },
+    {
+        "name": "vs-target",
+        "title": "Partial Html",
+        "active": false
+    },
+    {
+        "name": "json",
+        "title": "Backend Hook",
+        "active": false
+    }
+]

@@ -1,0 +1,10 @@
+<div vs-component="VsDisabled" vs-src="examples/vs-disabled.js">
+    <button type="button" vs-disabled="isDisabled" class="btn btn-primary btn-block">
+        This button is enabled if isDisabled = false
+    </button>
+    Value of isDisabled is
+    <span vs-model="isDisabled"></span>
+    <button vs-event-click="onClick()" type="button" class="btn btn-primary btn-block">
+        <span vs-model="buttonText()"></span>
+    </button>
+</div>

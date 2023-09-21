@@ -1,0 +1,16 @@
+<div vs-component="Json" vs-src="examples/json.js">
+    <button vs-event-click="onLoad()" type="button" class="btn btn-primary" vs-disabled="disabledControls">Get JSON</button>
+    <button vs-event-click="onClear()" type="button" class="btn btn-primary" vs-disabled="disabledControls">Clear</button>
+    <br>
+    <br>
+    <span vs-hide="isNotLoading">Loading...</span>
+    <div vs-for="item in data">
+        <a vs-event-click="onRemove(item.id)" href="javascript:void(0)" vs-disabled="disabledControls">Remove</a>
+        <span type="text" vs-model="item.first_name"></span>
+        <span vs-event-click="onItem(item.last_name)" type="text" vs-model="item.last_name"></span>
+    </div>
+    First Name
+    <input type="text" vs-model="firstName" class="form-control"> Last Name
+    <input type="text" vs-model="lastName" class="form-control">
+    <button vs-event-click="onAdd()" type="button" class="btn btn-primary" href="javascript:void(0)">Add</button>
+</div>

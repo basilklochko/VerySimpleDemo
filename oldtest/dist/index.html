@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VerySimple.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="vs.js"></script>
+    <!-- <script src="vs.min.js"></script> -->
+
+    <script src="complex.js"></script>
+    <script src="index.js"></script>
+    <script src="renderPartial.js"></script>
+    <script src="hide.js"></script>
+    <script src="json.js"></script>
+    <script src="test.js"></script>
+    <script src="for.js"></script>
+
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <h3>Complex component</h3>
+    <div vs-component="Complex">
+        <input vs-model="simple" type="text" />
+        <span vs-model="simple"></span>
+        <br>
+        <input vs-model="items[1]" type="text" />
+        <span vs-model="items[1]"></span>
+        <br>
+        <input vs-model="model.one" type="text" />
+        <span vs-model="model.one"></span>
+        <br>
+        <input vs-model="model.two.one" type="text" />
+        <span vs-model="model.two.one"></span>
+        <br>
+        <input vs-model="model.items[0]" type="text" />
+        <span vs-model="model.items[0]"></span>
+        <br>
+        <input vs-model="model.complex[1].one" type="text" />
+        <span vs-model="model.complex[1].one"></span>
+        <br>
+        <input vs-model="comps[1].text" type="text" />
+        <span vs-model="comps[1].text"></span>
+        <br>
+        <button vs-event-click="onReset()">Reset</button>
+    </div>
+    <hr> -->
+
+    <!-- <h3>Index component</h3>
+    <div vs-component="Index">
+        <input vs-model="$SharedService.text" type="text" />
+        <br>
+        <span vs-model="$SharedService.text"></span>
+        <br>
+        <input vs-model="internal" type="text" />
+        <br>
+        <span vs-model="internal"></span>
+        <br>
+        <button vs-event-click="onReset()">Reset</button>
+        <hr>
+
+    </div>
+    <hr> -->
+
+    <!-- <h3>Render partial on demand</h3>
+    <div vs-target="renderPartial">here will be loaded component</div>
+    <div vs-partial="renderPartial.html"></div>
+    <hr> -->
+    <!-- 
+    <div vs-partial="static.html"></div>
+    <hr> -->
+
+    <!-- <h3>Test component</h3>
+    <div vs-component="Test">
+        <div>
+            <span vs-model="text" vs-class="dynClass"></span>
+        </div>
+        <button vs-event-click="onClick()" vs-disabled="isDisabled">Reset</button>
+    </div>
+    <div vs-target="renderPartial">here will be loaded component</div> -->
+
+
+    <h3>Embedded For component loaded externally</h3>
+    <div vs-partial="for.html"></div>
+
+    <!-- <div vs-partial="json.html"></div>
+    <hr> -->
+
+    <!-- <h3>Embedded Hide component loaded externally</h3>
+    <div vs-partial="hide.html"></div> -->
+</body>
+
+</html>

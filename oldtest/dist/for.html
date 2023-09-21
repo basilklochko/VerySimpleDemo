@@ -1,0 +1,15 @@
+<div vs-component="For">
+    <ul vs-for="item in comps">
+        <li>
+            <input type="text" vs-model="item.text">
+            <span vs-model="item.text"></span>
+            <button vs-event-click="onRemove(item.text)">Remove</button>
+        </li>
+    </ul>
+
+    <button type="button" vs-event-click="onReset()">Reset</button>
+    <button type="button" vs-event-click="onClear()">Clear</button>
+
+    <input type="text" vs-model="comps[0].text">
+    <span vs-model="comps[0].text"></span>
+</div>
